@@ -1,14 +1,22 @@
 import { StatusBar } from 'expo-status-bar'
 import { Image, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import SignUp from './src/page/signup'
-import SignIn from './src/page/signin'
-import Lesson6 from './src/page/lesson6'
-import CountDown from './src/page/countDown'
+import Lesson7 from './src/page/lesson7';
 
 export default function App() {
+  const names = ["Chung", "Minh", "An", "Phuoc"]; // 3-4 tỉnh thành phố
+  names.map((item, i) => {
+    item % 2 == 0 ? "cr" : "incr"
+    console.log(i, ":", item);
+  }
+  )
   return (
-    <View style={styles.container}>  
-        <CountDown />
+    <View style={styles.container}>
+      {/* <Lesson7 /> */}
+      {
+        names.map((name, i) => (
+          <Text>{i} : {name}</Text>
+        ))
+      }
     </View>
   )
 }
@@ -18,7 +26,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     backgroundColor: 'purple',
-    justifyContent:'center',
+    justifyContent: 'center',
     alignItems: 'center',
     gap: 40
   },
