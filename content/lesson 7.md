@@ -7,7 +7,7 @@
 
 ### Cách khai báo Array
 - Có thể khai báo array bằng cách sử dụng cặp dấu ngoặc vuông `[]`:
-- Array có thể chứa bất kỳ kiểu dữ liệu nào: số, chuỗi, đối tượng, hàm, hoặc thậm chí là array khác (array lồng nhau).
+- Array có thể chứa bất kỳ kiểu dữ liệu nào: số, chuỗi, object, hàm, hoặc thậm chí là array khác (array lồng nhau).
   
 ```javascript
 const fruits = ["Apple", "Banana", "Orange"];
